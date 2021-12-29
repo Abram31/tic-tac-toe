@@ -1,0 +1,146 @@
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 20px;
+    background-image: url(img/background.jpg) ;
+    background-size: cover;
+    background-repeat: repeat;
+    align-content: center;
+    height: 500px;
+}
+.winnerText,
+.crossCounter,
+.circleCounter
+ {
+    color: coral;
+    height: 93px;
+    width: 380px;
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    transition: 2s;
+    /* opacity: 0; */
+
+}
+.crossCounter,
+.circleCounter {
+    width: 50px;
+}
+.crossCounter:before,
+.circleCounter:before {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.crossCounter:before {
+    content: url(img/svg/cross.svg);
+}
+.circleCounter:before {
+    content: url(img/svg/circle.svg);
+}
+
+.winnerText-1 {
+    color:coral;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-style: italic;
+    transition: 2s;
+    opacity: 0;
+}
+.tic-tac-toe {
+    position: relative;
+    margin:0 auto;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    cursor: pointer;
+}
+
+.backgroundWinner {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(gif/2k.gif) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 2s;
+    opacity: 0;
+    z-index: -1;
+}
+.activeWinner {
+    transition: 2s;
+    opacity: 1;
+    z-index: 1;
+}
+.fullCounter {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.square,
+.square-1,
+.square-2,
+.square-3,
+.square-4,
+.square-5,
+.square-6,
+.square-7,
+.square-8,
+.square-9
+ {
+    border: solid 2px coral;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3%;
+    
+
+}
+.circle {
+    content: url(img/svg/circle.svg);
+    
+    
+}
+.cross {
+    content: url(img/svg/cross.svg);
+
+}
+.square-2 {
+    
+}
+.square-5 {
+    
+}
+
+
+.btn-resset {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    margin: 0 auto;
+    color:whitesmoke;
+    width: 100px;
+    height: 50px;
+    border: 2px solid coral;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.219);
+
+}
